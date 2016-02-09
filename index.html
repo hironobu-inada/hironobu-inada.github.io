@@ -4,15 +4,180 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>やっほー</title>
+    <meta name="keywords" content="ポートフォリオ,デザイナー">
+    <meta neme="description" content="稲田浩信のポートフォリオ">
+    <title>稲田浩信ポートフォリオ</title>
     <!-- BootstrapのCSS読み込み -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+      *{
+        color:#646d66;
+      }
+      .center{
+        text-align: center;
+      }
+      .navbar{
+        margin:0;
+        border-radius: 0;
+        border: none;
+        background-color: #373836;
+      }
+      h1{
+        font-size: 20px;
+        margin-top: 12px;
+        color: #e5e7e2;
+        font-weight: normal;
+      }
+      .navbar a{
+        color: #e5e7e2!important;
+      }
+      h2{
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        margin: 40px 0 20px 0;
+      }
+      .photo{
+        padding: 40px;
+        text-align: center;
+        background-color: #ecefea;
+      }
+      .photo img{
+        width: 40%;
+      }
+      .photo h2{
+        margin: 20px 0 0 0;
+      }
+      #Work{
+        background-color: #e5e7e2;
+        padding-bottom:40px;
+      }
+      #Work img{
+        width: 80%;
+        text-align: center;
+      }
+      #Profile{
+        background-color: #ecefea;
+        padding-bottom:40px;
+      }
+      #Profile table{
+        margin: 0;
+      }
+      #GitHub{
+        background-color: #e5e7e2;
+        padding-bottom:40px;
+        text-align: center;
+      }
+      #GitHub .btnColor{
+      }
+      @media (max-width: 768px) {
+        .center{
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        h1{
+          margin-left: 16px;
+        }
+        .photo img{
+          width: 60%;
+        }
+        #Work{
+            background-color: #e5e7e2;
+            padding-bottom:0;
+          }
+        #Work img{
+          width: 60%;
+          text-align: center;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>しまさん。てんきがいいねー</h1>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">メニュー</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <h1>Inada Works</h1>
+          </div>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#Work">Work</a></li>
+              <li><a href="#Profile">Profile</a></li>
+              <li><a href="#GitHub">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- 写真ここから -->
+    <div class="photo">
+      <img src="inada.png" alt="稲田" class="img-circle">
+      <h2>Hironobu Inada</h2>
+    </div>
+    <!-- 写真ここまで -->
+    
+    <!-- 作品ここから -->
+    <div class="container-fluid" id="Work">
+      <h2>Work</h2>
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 center">
+          <a href=""><img src="work1.png" alt="電書OFF" class="img-circle"></a>
+        </div>
+        <div class="col-xs-6 col-sm-3 center">
+          <a href=""><img src="work2.png" alt="アリス" class="img-circle"></a>
+        </div>
+        <div class="col-xs-6 col-sm-3 center">
+          <a href=""><img src="work3.png" alt="パズル" class="img-circle"></a>
+        </div>
+        <div class="col-xs-6 col-sm-3 center">
+          <a href=""><img src="work4.png" alt="筋肉" class="img-circle"></a>
+        </div>
+      </div>
+    </div>
+    <!-- 作品ここまで -->
+    
+    <!-- プロフィールここから -->
+    <div class="container-fluid" id="Profile">
+      <h2>Profile</h2>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th>名前</th>
+            <td>稲田浩信</td>
+          </tr>
+          <tr>
+            <th>年齢</th>
+            <td>４２歳</td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td>埼玉県所沢市。。。。。。。</td>
+          </tr>
+          <tr>
+            <th>E-mail</th>
+            <td>hironobu.inada@ssss.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- プロフィールここまで -->
+    
+    <!-- githubここから -->
+    <div class="container-fluid" id="GitHub">
+      <h2>GitHub</h2>
+	    <a href="https://github.com/hironobu-inada" class="btn btn-default btn-lg btnColor">GitHubへ</a>
+    </div>
+    <!-- githubここまで -->
+    
   </body>
 </html>
